@@ -2,15 +2,12 @@
 	"configurations": [
 		{
 			"type": "chrome",
-			"linux": {
-				"runtimeExecutable": "/usr/bin/chromium"
-			},
 			"request": "launch",
 			"name": "Launch",
 			"url": "http://localhost:4895",
 			"webRoot": "${workspaceFolder}",
 			"cwd": "${workspaceFolder}",
-			"preLaunchTask": "start:core"
+			"preLaunchTask": "start:portfolio"
 		}
 	]
 }

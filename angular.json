@@ -102,7 +102,10 @@
 				"lint": {
 					"builder": "@nrwl/linter:eslint",
 					"options": {
-						"lintFilePatterns": ["apps/portfolio/src/**/*.ts", "apps/portfolio/src/**/*.html"]
+						"lintFilePatterns": [
+							"apps/portfolio/src/**/*.ts",
+							"apps/portfolio/src/**/*.html"
+						]
 					}
 				},
 				"test": {
