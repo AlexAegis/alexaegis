@@ -10,11 +10,17 @@
 		"importHelpers": true,
 		"target": "es2015",
 		"module": "esnext",
+		"resolveJsonModule": true,
+		"strict": true,
 		"lib": ["es2017", "dom"],
 		"skipLibCheck": true,
 		"skipDefaultLibCheck": true,
 		"baseUrl": ".",
 		"paths": {}
+	},
+	"angularCompilerOptions": {
+		"enableIvy": true,
+		"fullTemplateTypeCheck": true
 	},
 	"exclude": ["node_modules", "tmp"]
 }
