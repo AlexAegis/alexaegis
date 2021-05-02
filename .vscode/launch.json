@@ -7,7 +7,7 @@
 			},
 			"request": "launch",
 			"name": "Launch",
-			"url": "http://localhost:4801",
+			"url": "http://localhost:4895",
 			"webRoot": "${workspaceFolder}",
 			"cwd": "${workspaceFolder}",
 			"preLaunchTask": "start:core"

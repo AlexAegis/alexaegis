@@ -23,7 +23,7 @@
 	"editor.snippetSuggestions": "bottom",
 	"editor.codeActionsOnSave": {
 		"source.fixAll": true,
-		"source.organizeImports": true,
+		"source.organizeImports": false,
 		// For ESLint
 		"source.fixAll.eslint": true,
 		// For Stylelint
