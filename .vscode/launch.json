@@ -8,6 +8,17 @@
 			"webRoot": "${workspaceFolder}",
 			"cwd": "${workspaceFolder}",
 			"preLaunchTask": "start:portfolio"
+		},
+		{
+			"name": "Current TS File",
+			"type": "pwa-node",
+			"request": "launch",
+			"sourceMaps": true,
+			"smartStep": true,
+			"args": ["${relativeFile}"],
+			"runtimeArgs": ["-r", "ts-node/register", "-r", "tsconfig-paths/register"],
+			"cwd": "${workspaceRoot}",
+			"internalConsoleOptions": "openOnSessionStart"
 		}
 	]
 }
