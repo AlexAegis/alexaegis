@@ -13,7 +13,8 @@ them on the next request after they expire.
 
 ### [Advent of Code](https://github.com/AlexAegis/advent-of-code)
 
-My [Advent of Code](https://adventofcode.com/) solutions. Mostly in TypeScript, with some Rust solutions too. Benchmarks included
+My [Advent of Code](https://adventofcode.com/) solutions.
+Mostly in TypeScript, with some Rust solutions too. Benchmarks included.
 
 ### [Dotfiles](https://github.com/AlexAegis/dotfiles)
 
