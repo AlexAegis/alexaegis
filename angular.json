@@ -120,7 +120,8 @@
 					"outputs": ["coverage/apps/portfolio"],
 					"options": {
 						"jestConfig": "apps/portfolio/jest.config.js",
-						"passWithNoTests": true
+						"passWithNoTests": true,
+						"codeCoverage": true
 					}
 				}
 			}
