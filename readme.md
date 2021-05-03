@@ -1,5 +1,9 @@
 # Hey hey people
 
+## Portfolio Site
+
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/4c1e2c00b6f64f448a5f52622d1051fc)](https://www.codacy.com/gh/AlexAegis/alexaegis/dashboard?utm_source=github.com&utm_medium=referral&utm_content=AlexAegis/alexaegis&utm_campaign=Badge_Grade)
+
 ## Notable projects
 
 ### [Angular Authentication Library](https://github.com/AlexAegis/auth)
