@@ -31,6 +31,14 @@
 	"config": {
 		"engine-strict": true
 	},
+	"engines": {
+		"node": ">=14.0.0",
+		"npm": ">=7.0.0"
+	},
+	"workspaces": [
+		"apps/*",
+		"libs/*"
+	],
 	"scripts": {
 		"ng": "nx",
 		"nx": "nx",
