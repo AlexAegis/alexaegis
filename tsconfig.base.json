@@ -16,7 +16,9 @@
 		"skipLibCheck": true,
 		"skipDefaultLibCheck": true,
 		"baseUrl": ".",
-		"paths": {}
+		"paths": {
+			"@portfolio/*": ["./apps/portfolio/src/*"]
+		}
 	},
 	"angularCompilerOptions": {
 		"enableIvy": true,
