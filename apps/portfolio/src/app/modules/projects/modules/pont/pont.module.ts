@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '@portfolio/app/shared';
-import { PontPageComponent } from './pages/pont-page.component';
+import { PontPageComponent, PontPageComponentModule } from './pages/pont-page';
 
 @NgModule({
-	declarations: [PontPageComponent],
 	imports: [
 		SharedModule,
+		PontPageComponentModule,
 		RouterModule.forChild([
 			{
 				path: '',

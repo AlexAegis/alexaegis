@@ -8,8 +8,7 @@
 		"@schematics/angular": {
 			"component": {
 				"changeDetection": "OnPush",
-				"style": "scss",
-				"flat": true
+				"style": "scss"
 			}
 		},
 		"@nrwl/angular": {

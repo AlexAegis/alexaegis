@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+import { SiteFrameComponentModule } from './site-frame-component.module';
 import { SiteFrameComponent } from './site-frame.component';
 
 describe('SiteFrameComponent', () => {
@@ -7,7 +9,7 @@ describe('SiteFrameComponent', () => {
 
 	beforeEach(async () => {
 		await TestBed.configureTestingModule({
-			declarations: [SiteFrameComponent],
+			imports: [SiteFrameComponentModule, RouterTestingModule],
 		}).compileComponents();
 	});
 

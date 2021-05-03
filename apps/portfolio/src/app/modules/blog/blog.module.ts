@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../../shared';
-import { BlogPageComponent } from './pages/blog-page.component';
+import { BlogPageComponent, BlogPageComponentModule } from './pages/blog-page';
 
 @NgModule({
-	declarations: [BlogPageComponent],
+	declarations: [],
 	imports: [
 		SharedModule,
+		BlogPageComponentModule,
 		RouterModule.forChild([
 			{
 				path: '',

@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { mainPages } from '../routes';
+import { mainRoutesMetadata } from '../../main.routes';
 
 @Component({
 	selector: 'portfolio-site-menu',
@@ -8,5 +8,5 @@ import { mainPages } from '../routes';
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiteMenuComponent {
-	mainPages = mainPages;
+	mainRoutes = mainRoutesMetadata;
 }

@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { PontPageComponentModule } from './pont-page-component.module';
 import { PontPageComponent } from './pont-page.component';
 
 describe('PontPageComponent', () => {
@@ -7,7 +8,7 @@ describe('PontPageComponent', () => {
 
 	beforeEach(async () => {
 		await TestBed.configureTestingModule({
-			declarations: [PontPageComponent],
+			imports: [PontPageComponentModule],
 		}).compileComponents();
 	});
 

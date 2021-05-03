@@ -1,21 +1,22 @@
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { SiteFrameComponent } from './components/site-frame.component';
-import { SiteHeaderComponent } from './components/site-header.component';
-import { SiteMenuComponent } from './components/site-menu.component';
+import { SiteFrameComponentModule } from './components/site-frame';
+import { SiteHeaderComponentModule } from './components/site-header';
+import { SiteMenuComponentModule } from './components/site-menu';
 import { CoreModule } from './core/core.module';
-import { NotFoundComponent } from './pages/not-found.component';
+import { NotFoundComponentModule } from './pages/not-found';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
-	declarations: [
-		AppComponent,
-		SiteFrameComponent,
-		SiteHeaderComponent,
-		SiteMenuComponent,
-		NotFoundComponent,
+	declarations: [AppComponent],
+	imports: [
+		CoreModule,
+		SharedModule,
+		NotFoundComponentModule,
+		SiteFrameComponentModule,
+		SiteHeaderComponentModule,
+		SiteMenuComponentModule,
 	],
-	imports: [CoreModule, SharedModule],
 	providers: [],
 	bootstrap: [AppComponent],
 })

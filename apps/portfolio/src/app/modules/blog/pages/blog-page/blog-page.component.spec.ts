@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { BlogPageComponentModule } from './blog-page-component.module';
 import { BlogPageComponent } from './blog-page.component';
 
 describe('BlogPageComponent', () => {
@@ -7,7 +8,7 @@ describe('BlogPageComponent', () => {
 
 	beforeEach(async () => {
 		await TestBed.configureTestingModule({
-			declarations: [BlogPageComponent],
+			imports: [BlogPageComponentModule],
 		}).compileComponents();
 	});
 

@@ -1,7 +1,7 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { routes } from '../routes';
+import { routes } from '../app.routes';
 
 @NgModule({
 	imports: [BrowserModule, RouterModule.forRoot(routes)],
