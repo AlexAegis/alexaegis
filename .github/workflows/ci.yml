@@ -30,10 +30,10 @@ jobs:
       - name: Install packages
         if: steps.cache-packages.outputs.cache-hit != 'true'
         run: npm ci
-      - name: Lint packages
-        run: npm lint
-      - name: Lint format
-        run: npm run lint:format
+      - name: Lint
+        run: npm run lint
+      - name: Format check
+        run: npm run format:check
   test:
     runs-on: ubuntu-latest
     strategy:

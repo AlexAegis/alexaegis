@@ -38,6 +38,7 @@
 		"start:portfolio": "ng serve portfolio",
 		"build": "ng build",
 		"test": "ng test",
+		"test:skip-cache": "nx run-many --all --target test --skip-nx-cache",
 		"lint": "nx workspace-lint && ng lint",
 		"lint:format": "prettier --check .",
 		"e2e": "ng e2e",
