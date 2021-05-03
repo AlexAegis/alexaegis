@@ -76,7 +76,7 @@
 		"@nrwl/angular": "12.0.8",
 		"@scullyio/ng-lib": "^1.1.1",
 		"@scullyio/scully": "^1.1.1",
-		"rxjs": "~6.5.3",
+		"rxjs": "~6.6.6",
 		"tslib": "^2.2.0",
 		"zone.js": "^0.11.4"
 	},
