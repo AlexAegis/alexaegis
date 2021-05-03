@@ -1,9 +1,17 @@
 {
 	"version": 1,
 	"cli": {
-		"defaultCollection": "@nrwl/angular"
+		"defaultCollection": "@nrwl/angular",
+		"analytics": false
 	},
 	"schematics": {
+		"@schematics/angular": {
+			"component": {
+				"changeDetection": "OnPush",
+				"style": "scss",
+				"flat": true
+			}
+		},
 		"@nrwl/angular": {
 			"application": {
 				"linter": "eslint"

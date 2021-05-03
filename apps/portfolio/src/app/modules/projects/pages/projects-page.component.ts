@@ -1,9 +1,8 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-	selector: 'portfolio-root',
-	templateUrl: './app.component.html',
-	styleUrls: ['./app.component.scss'],
+	templateUrl: './projects-page.component.html',
+	styleUrls: ['./projects-page.component.scss'],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AppComponent {}
+export class ProjectsPageComponent {}
