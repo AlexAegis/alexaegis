@@ -1,2 +1,10 @@
 <p>blog-page works!</p>
-<ng-template #shoulderItemFragment> Put me to the left </ng-template>
+
+<button (click)="moveDown()">move down</button>
+<div [style]="{ marginTop: top + 'px' }">Put</div>
+
+<ng-template portfolioOnShoulder shoulder="left">
+	<div [style]="{ marginTop: top + 'px' }">Put me to the left</div>
+</ng-template>
+<ng-template portfolioOnShoulder shoulder="right"> <div>Right Widget 1</div> </ng-template>
+<ng-template portfolioOnShoulder shoulder="right"> <div>Right Widget 2</div> </ng-template>

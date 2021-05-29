@@ -1,6 +1,20 @@
-<div class="shoulder shoulder-left"></div>
+<div
+	class="shoulder shoulder-left"
+	*ngIf="layoutTricolumnShoulderPortalsService.leftShoulderPortals$ | async; let portals"
+>
+	<ng-template ngFor [ngForOf]="portals" let-portal>
+		<ng-template [cdkPortalOutlet]="portal"></ng-template>
+	</ng-template>
+</div>
 <div class="content">
 	<router-outlet></router-outlet>
 </div>
-<div class="shoulder shoulder-right"></div>
+<div
+	class="shoulder shoulder-right"
+	*ngIf="layoutTricolumnShoulderPortalsService.rightShoulderPortals$ | async; let portals"
+>
+	<ng-template ngFor [ngForOf]="portals" let-portal>
+		<ng-template [cdkPortalOutlet]="portal"></ng-template>
+	</ng-template>
+</div>
 <div class="footer"></div>

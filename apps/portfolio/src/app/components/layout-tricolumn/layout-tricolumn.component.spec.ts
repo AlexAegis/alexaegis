@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+import { LayoutTricolumnComponentModule } from './layout-tricolumn-component.module';
 import { LayoutTricolumnComponent } from './layout-tricolumn.component';
 
 describe('LayoutTricolumnComponent', () => {
@@ -7,7 +9,7 @@ describe('LayoutTricolumnComponent', () => {
 
 	beforeEach(async () => {
 		await TestBed.configureTestingModule({
-			declarations: [LayoutTricolumnComponent],
+			imports: [LayoutTricolumnComponentModule, RouterTestingModule],
 		}).compileComponents();
 	});
 

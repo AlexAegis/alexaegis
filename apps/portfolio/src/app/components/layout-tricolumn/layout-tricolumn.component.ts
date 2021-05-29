@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { LayoutTricolumnShoulderPortalsService } from './services/layout-tricolumn-shoulder-portals.service';
 
 @Component({
 	selector: 'portfolio-layout-tricolumn',
@@ -6,8 +7,8 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 	styleUrls: ['./layout-tricolumn.component.scss'],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LayoutTricolumnComponent implements OnInit {
-	ngOnInit(): void {
-		console.log('LayoutTricolumnComponent');
-	}
+export class LayoutTricolumnComponent {
+	constructor(
+		public readonly layoutTricolumnShoulderPortalsService: LayoutTricolumnShoulderPortalsService
+	) {}
 }

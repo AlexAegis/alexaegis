@@ -17,6 +17,9 @@
 	}
 
 	.shoulder {
+		display: flex;
+		flex-direction: column;
+
 		height: 100%;
 		background-color: aquamarine;
 		grid-row: 1;
