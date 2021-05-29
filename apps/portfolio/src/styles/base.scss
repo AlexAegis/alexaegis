@@ -1,14 +1,18 @@
 /* override browser default */
 html,
 body {
+	position: absolute;
 	margin: 0;
 	padding: 0;
+	top: 0px;
+	left: 0px;
 }
 
 /* use viewport-relative units to cover page fully */
 body {
 	height: 100vh;
 	width: 100vw;
+	font-family: system-ui;
 }
 
 /* include border and padding in element width and height */
@@ -18,4 +22,16 @@ body {
 
 router-outlet {
 	position: absolute;
+}
+
+a,
+button {
+	&.no-decor {
+		color: var(--main-color);
+		text-decoration: none;
+
+		&:visited {
+			color: var(--main-color);
+		}
+	}
 }

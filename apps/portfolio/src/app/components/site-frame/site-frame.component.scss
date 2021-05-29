@@ -1,3 +1,14 @@
 :host {
 	display: grid;
+	height: var(--app-height);
+	grid-template-rows: var(--app-header-height) auto;
+	grid-template-columns: auto var(--app-waist) auto;
+
+	h1 {
+		color: black;
+	}
+
+	portfolio-site-header {
+		grid-column: 1 / -1;
+	}
 }

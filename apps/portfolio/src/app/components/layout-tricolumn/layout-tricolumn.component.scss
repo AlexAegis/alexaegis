@@ -1,0 +1,39 @@
+:host {
+	display: grid;
+	// width: 100%;
+	grid-column: 1 / -1;
+	grid-template-rows: auto 6em;
+	grid-template-columns: auto 14em var(--app-waist) 14em auto;
+
+	.content {
+		background-color: rgba(87, 87, 87, 0.233);
+		justify-self: center;
+		padding: 1em 1em 0 1em;
+		height: 100%;
+		width: 100%;
+
+		grid-row: 1;
+		grid-column: 3;
+	}
+
+	.shoulder {
+		height: 100%;
+		background-color: aquamarine;
+		grid-row: 1;
+
+		&-left {
+			grid-column: 2;
+		}
+
+		&-right {
+			grid-column: 4;
+		}
+	}
+
+	.footer {
+		background-color: red;
+		height: 100%;
+		grid-row: 2;
+		grid-column: 1 / -1;
+	}
+}

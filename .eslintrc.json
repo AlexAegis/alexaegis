@@ -8,7 +8,7 @@
 		{
 			"files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
 			"rules": {
-				"no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+				"no-unused-vars": "off",
 				"quotes": ["error", "single", { "avoidEscape": true }],
 				"@nrwl/nx/enforce-module-boundaries": [
 					"error",
@@ -46,7 +46,7 @@
 		}
 	],
 	"rules": {
-		"no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+		"no-unused-vars": "off",
 		"quotes": ["error", "single", { "avoidEscape": true }]
 	}
 }

@@ -13,6 +13,7 @@ const otherPages: Routes = [
 export const routes: Routes = [
 	{
 		path: '',
+		// runGuardsAndResolvers: 'always',
 		component: SiteFrameComponent,
 		children: mainRoutes.concat(otherPages),
 	},

@@ -55,7 +55,7 @@
 						"tsConfig": "apps/portfolio/tsconfig.app.json",
 						"aot": true,
 						"assets": ["apps/portfolio/src/favicon.ico", "apps/portfolio/src/assets"],
-						"styles": ["apps/portfolio/src/styles.scss"],
+						"styles": ["apps/portfolio/src/styles/index.scss"],
 						"scripts": []
 					},
 					"configurations": {

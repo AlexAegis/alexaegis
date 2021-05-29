@@ -1,4 +1,25 @@
-<a routerLink="/" routerLinkActive="active">Portfolio</a>
-<a [routerLink]="page.path" routerLinkActive="active" *ngFor="let page of mainRoutes">
-	{{ page.data.name }}
-</a>
+<!--
+	TODO: Recursive depth, on first level, sideways, second level dropdown, after that
+	side dropdown
+-->
+<ng-template ngFor let-menuItem let-i="index" [ngForOf]="menuConfiguration">
+	<ng-template [ngIf]="menuItem.children?.length" [ngIfElse]="single">
+		dropdown of {{ menuItem.name }}
+		items:
+		<a
+			*ngFor="let child of menuItem.children"
+			class="no-decor"
+			[routerLink]="child.path"
+			routerLinkActive="active"
+		>
+			{{ child.name }}
+		</a>
+	</ng-template>
+	<ng-template #single>
+		<a class="no-decor" [routerLink]="menuItem.path" routerLinkActive="active">
+			{{ menuItem.name }}
+		</a>
+	</ng-template>
+</ng-template>
+
+<portfolio-repository-link></portfolio-repository-link>
