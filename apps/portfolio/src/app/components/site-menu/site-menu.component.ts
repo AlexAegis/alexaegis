@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { menuConfiguration } from '../../main.routes';
+import { menuConfig } from '@portfolio/app/app.routes';
 
 @Component({
 	selector: 'portfolio-site-menu',
@@ -8,5 +8,5 @@ import { menuConfiguration } from '../../main.routes';
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SiteMenuComponent {
-	menuConfiguration = menuConfiguration;
+	menuConfiguration = menuConfig;
 }
