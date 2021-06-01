@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { SharedModule } from '@portfolio/app/shared';
-import { RepositoryLinkComponentModule } from '../repo-url.component';
+import { RepositoryLinkComponentModule } from '../repository-link';
 import { SiteMenuComponent } from './site-menu.component';
 
 @NgModule({
